@@ -1,0 +1,7 @@
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\bin\Debug\02_GiftShop.exe.config
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\bin\Debug\02_GiftShop.exe
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\bin\Debug\02_GiftShop.pdb
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\obj\Debug\02_GiftShop.csproj.AssemblyReference.cache
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\obj\Debug\02_GiftShop.csproj.CoreCompileInputs.cache
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\obj\Debug\02_GiftShop.exe
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\02_GiftShop\02_GiftShop\obj\Debug\02_GiftShop.pdb

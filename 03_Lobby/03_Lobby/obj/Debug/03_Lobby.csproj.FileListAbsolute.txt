@@ -1,0 +1,7 @@
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\bin\Debug\03_Lobby.exe.config
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\bin\Debug\03_Lobby.exe
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\bin\Debug\03_Lobby.pdb
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\obj\Debug\03_Lobby.csproj.AssemblyReference.cache
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\obj\Debug\03_Lobby.csproj.CoreCompileInputs.cache
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\obj\Debug\03_Lobby.exe
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\03_Lobby\03_Lobby\obj\Debug\03_Lobby.pdb
