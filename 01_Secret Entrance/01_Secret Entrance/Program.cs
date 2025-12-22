@@ -20,21 +20,32 @@ namespace _01_Secret_Entrance
 
                     if (line.Contains("R"))
                     {
-                        vysledek = (vysledek + odpocet) % 100;
+                        vysledek += + odpocet;
+                        while (vysledek > 99)
+                        {
+                            vysledek -= 100;
+                            nuly++;
+                        }
                     }
                     else if (line.Contains("L"))
                     {
-                        vysledek = vysledek - odpocet;
+                        //zabraneni falesnemu zapoctu pri odchodu z 0
+                        if (vysledek == 0)
+                        {
+                            vysledek = 100;
+                        }
 
+                        vysledek -= odpocet;
                         while (vysledek < 0)
                         {
                             vysledek += 100;
+                            nuly++;
                         }
-                    }
 
-                    if (vysledek == 0)
-                    {
-                        nuly++;
+                        if (vysledek == 0)
+                        {
+                            nuly++;
+                        }
                     }
                 }
                 Console.WriteLine(nuly);

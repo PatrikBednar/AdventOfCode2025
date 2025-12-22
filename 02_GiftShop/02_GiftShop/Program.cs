@@ -15,42 +15,31 @@ namespace _02_GiftShop
             //rozdeleni inputu na jednotlive rozmezi id
             string[] ids = input.Split(',');
             long pocet = ids.Length;
-
-            Console.WriteLine(CheckForRepeating(ids, pocet));
-            Console.ReadLine();
         }
         static long CheckForRepeating(string[] ids, long pocet)
         {
-            long vysledek = 0;
-
-            for (long i = 0; i < pocet; i++)
+            for (int i = 0; i < ids.Length; i++)
             {
-                //rozdeleni rozmezi na cisla od - do
-                string[] id = ids[i].Split('-');
-                long idAlong = long.Parse(id[0]);
-                long idBlong = long.Parse(id[1]);
+                string[] fromTo = ids[i].Split('-');
 
-                long cislo = idAlong;
-                while(cislo <= idBlong)
+                long from = long.Parse(ids[0]);
+                long to = long.Parse(ids[1]);
+
+                for (long j = from; j <= to; j++)
                 {
-                    int delkaCisla = cislo.ToString().Length;
-                    
-                    if (delkaCisla % 2 == 0)
+                    int delka = from.ToString().Length;
+                    if (delka % 2 == 0)
                     {
-                        //rozdeleni cisla na dve casti pokud je sude
-                        string levaCast = cislo.ToString().Substring(0, delkaCisla / 2);
-                        string pravaCast = cislo.ToString().Substring(delkaCisla / 2);
-
-                        //kontrola stejnosti obou casti cisla
-                        if (levaCast == pravaCast)
+                        int pocitadlo = 1;
+                        for (int m = 0; m < delka; m += pocitadlo)
                         {
-                            vysledek = vysledek + cislo;
+
+
+                            pocitadlo++;
                         }
                     }
-                    cislo++;
                 }
             }
-            return vysledek;
         }
     }
 }
