@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace _03_Lobby
@@ -24,23 +20,40 @@ namespace _03_Lobby
                 Console.WriteLine(vysledek);
             }
             Console.ReadLine();
-
-            string baterka1 = "987654321111111";
-            string baterka2 = "811111111111119";
-            string baterka3 = "234234234234278";
-            string baterka4 = "818181911112111";
-
-            Console.WriteLine(Joltage(baterka1));
-            Console.WriteLine(Joltage(baterka2));
-            Console.WriteLine(Joltage(baterka3));
-            Console.WriteLine(Joltage(baterka4));
-
-            Console.ReadLine();
         }
-
-        static long Joltage(int[] pole)
+        static int Joltage(string baterka)
         {
-            
+            int nejvetsiCislo = baterka[0]-'0';
+            int druheCislo = 0;
+            int indexPrvniho = 0;
+            for (int i = 1; i < baterka.Length-1; i++)
+            {
+                if (baterka[i]-'0' > nejvetsiCislo)
+                {
+                    indexPrvniho = i;
+                    nejvetsiCislo = baterka[indexPrvniho] - '0';
+                }
+            }
+
+            int indexDruheho = indexPrvniho+1;
+
+            if(indexDruheho == baterka.Length)
+            {
+                druheCislo = baterka[indexDruheho] - '0';
+            }
+            else
+            {
+                for (int i = indexDruheho; i < baterka.Length; i++)
+                {
+                    if (baterka[i] - '0' > druheCislo)
+                    {
+                        druheCislo = baterka[i] - '0';
+                    }
+                }
+            }
+            string vysledekString = $"{nejvetsiCislo}{druheCislo}";
+            int vysledek = int.Parse(vysledekString);
+            return vysledek;
         }
     }
 }
