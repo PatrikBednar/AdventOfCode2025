@@ -1,0 +1,8 @@
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\obj\Debug\04_PrintingDepartment_2.csproj.AssemblyReference.cache
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\obj\Debug\04_PrintingDepartment_2.csproj.CoreCompileInputs.cache
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\bin\Debug\04_PrintingDepartment_2.exe.config
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\bin\Debug\04_PrintingDepartment_2.exe
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\bin\Debug\04_PrintingDepartment_2.pdb
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\obj\Debug\04_PrintingDepartment_2.exe
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\obj\Debug\04_PrintingDepartment_2.pdb
+C:\Users\pataa\Documents\GitHub\AdventOfCode2025\04_PrintingDepartment_2\04_PrintingDepartment_2\obj\Debug\04_PrintingDepartment_2.exe.config

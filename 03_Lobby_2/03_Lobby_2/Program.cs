@@ -14,49 +14,39 @@ namespace _03_Lobby
                 long vysledek = 0;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    //Console.WriteLine(line);
                     vysledek = vysledek + Joltage(line);
                 }
                 Console.WriteLine(vysledek);
             }
+
             Console.ReadLine();
         }
-        static int Joltage(string baterka)
+        static long Joltage(string baterka)
         {
-            int nejvetsiCislo = baterka[0] - '0';
-            int druheCislo = 0;
-            int indexPrvniho = 0;
-
-            int pocitadlo = 0;
-
-            for (int i = 1; i < baterka.Length; i++)
+            int nejvetsiCislo = -1;
+            int indexPosledniho = 0;
+            string vysledekString = "";
+            int pocitadlo = 11;
+            for (int i = 0; i < 12; i++)
             {
-                pocitadlo++;
-                if (baterka[i] - '0' > nejvetsiCislo && baterka.Length - i + pocitadlo )
+                nejvetsiCislo = -1;
+                for (int j = indexPosledniho; j <= baterka.Length-1-pocitadlo; j++)
                 {
-                    indexPrvniho = i;
-                    nejvetsiCislo = baterka[indexPrvniho] - '0';
-                }
-            }
 
-            int indexDruheho = indexPrvniho + 1;
-
-            if (indexDruheho == baterka.Length)
-            {
-                druheCislo = baterka[indexDruheho] - '0';
-            }
-            else
-            {
-                for (int i = indexDruheho; i < baterka.Length; i++)
-                {
-                    if (baterka[i] - '0' > druheCislo)
+                    if (baterka[j] - '0' > nejvetsiCislo)
                     {
-                        druheCislo = baterka[i] - '0';
+                        indexPosledniho = j+1;
+                        nejvetsiCislo = baterka[j] - '0';
                     }
                 }
+                if(pocitadlo >=0)
+                {
+                    pocitadlo--;
+                }
+                vysledekString = vysledekString + nejvetsiCislo.ToString();
             }
-            string vysledekString = nejvetsiCislo.ToString() +druheCislo.ToString();
-            int vysledek = int.Parse(vysledekString);
+
+            long vysledek = long.Parse(vysledekString);
             return vysledek;
         }
     }
